@@ -31,7 +31,7 @@ export interface StoreInfo {
     address: string;
 
     /**
-     * 标识（0:普通 1:精选、2:甄选）
+     * 标识
      */
     identity: Identity;
 
@@ -43,12 +43,8 @@ export interface StoreInfo {
 
 // 标识
 export enum Identity {
-    // 0:普通
     COMMON = 0,
-    // 1:精选
-    SELECTION = 1,
-    // 2:甄选
-    FEATURED = 2,
+    SELECTION = 1
 }
 
 export interface StoreData {
